@@ -65,6 +65,14 @@ Add an iptables rule to allow data from udp port 49152.
 ```
 sudo iptables -A INPUT -p udp --sport 49152 -j ACCEPT
 ```
+Make the iptables rule persistent across reboots
+```
+sudo apt install iptables-persistent
+
+sudo su
+
+iptables-save > /etc/iptables/rules.v4
+```
 
 
 
