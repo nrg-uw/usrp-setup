@@ -33,6 +33,8 @@ export PYTHONPATH=/usr/local/lib/python3/dist-packages/:$PYTHONPATH
 
 ## Install the latest boost library 
 
+**Important**: Install the latest boost libary **after** installing the dependencies for the UHD from the Ettus website, otherwise the latest version of boost will be overridden by the apt packages of boost.
+
 Download and install the latest [boost library](https://www.linuxfromscratch.org/blfs/view/svn/general/boost.html).
 
 ```
@@ -112,6 +114,15 @@ Check the UHD installtion.
 uhd_config_info --version
 ```
 Should be version `4.1`.
+
+## Post Install Steps 
+After installing UHD, we need to install the FPGA images in the USRP.
+
+Download the FPGA packages using the following script in `utils`.
+```
+sudo python3 uhd_images_downloader.py
+```
+Next, install the image in the USRP using the `uhd_image_loader` script.
 
 ## Debugging UHD
 
