@@ -59,6 +59,8 @@ Next, complete the install as *root*.
 sudo su
 
 ./b2 install threading=multi link=shared   
+
+exit
 ```
 
 ## Configure firewall to allow communication with USRP
