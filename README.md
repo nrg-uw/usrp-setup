@@ -205,3 +205,9 @@ Check gnuradio install as follows:
 ```
 gnuradio-config-info --version
 ```
+## Starting and testing the USRP 
+
+Follow the guide below, if the usrp and daughterboards are assembled already, start at step 12
+```
+https://kb.ettus.com/USRP_X_Series_Quick_Start_(Daughterboard_Installation)
+```
