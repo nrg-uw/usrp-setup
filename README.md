@@ -40,9 +40,9 @@ Download and install the latest [boost library](https://www.linuxfromscratch.org
 ```
 wget https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2
 
-tar -xzfv boost_1_78_0.tar.bz2
+tar -xzfv boost_1_78_0.tar.bz2 / if this doesn't work try : tar jxSf boost_1_78_0.tar.bz2
 
-cd boost_1_78_0.tar.bz2
+cd boost_1_78_0.tar.bz2 / if "tar jxSf boost_1_78_0.tar.bz2" has been used previously then use "cd boost_1_78_0" instead
 
 ./bootstrap.sh --prefix=/usr --with-python=python3
 
