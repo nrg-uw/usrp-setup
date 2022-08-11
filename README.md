@@ -76,6 +76,8 @@ sudo apt install iptables-persistent
 sudo su
 
 iptables-save > /etc/iptables/rules.v4
+
+exit
 ```
 
 
@@ -90,7 +92,7 @@ Follow the instructions in the [Ettus Wiki](https://files.ettus.com/manual/page_
 
 ```
 git clone --branch UHD-4.1 https://github.com/ettusresearch/uhd.git
-cd /uhd/host/
+cd uhd/host/
 
 mkdir build
 cd build
