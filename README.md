@@ -161,7 +161,7 @@ Check gcc configuration to make sure gcc-8 is default.
 sudo update-alternatives --config gcc
 ```
 
-## Enabling python support for GNUradio
+## Enabling python support for GNUradio 
 
 Install `pygccxml` for python3
 ```
@@ -173,7 +173,7 @@ Install pybind11 from source. Clone the pybind11 library from [Github](https://g
 During the install, you will run into error regarding pytest.
 To solve, run the following.
 ```
-/usr/bin/python3.6 -m pip install pytest
+/usr/bin/python3.6 -m pip install pytest ====> if this doesnt work try: sudo apt-get install gnuradio python3-packaging and skip the next step.
 ```
 Then do the standard make process as follows:
 
